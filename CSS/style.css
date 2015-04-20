@@ -1,0 +1,505 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+h1 {
+  font-family: "sharik-sans", sans-serif;
+  font-weight: 800;
+  font-size: 2em; }
+
+h2 {
+  font-family: "sharik-sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.5em; }
+
+h3 {
+  font-family: "sharik-sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.3em; }
+
+p {
+  font-family: "sharik-sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.1em; }
+
+a {
+  font-family: "sharik-sans", sans-serif;
+  font-weight: 400;
+  font-size: 1em; }
+
+.item-description {
+  font-family: "sharik-sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.1em; }
+
+.item-price {
+  font-family: "sharik-sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.1em; }
+
+h1, h2, h3 {
+  line-height: 1.3; }
+
+p, a {
+  line-height: 1.8; }
+
+span {
+  font-weight: bold; }
+
+.menu-left a, .menu-right a {
+  font-weight: bold; }
+
+h1, .item-description {
+  color: #0c839e; }
+
+p, .allergies {
+  color: #767b7c; }
+
+h2, h3 {
+  color: #0aaed3; }
+
+.item-price {
+  color: #ffc000; }
+
+a {
+  color: white; }
+
+a:hover {
+  color: #ffc000; }
+
+.hero h1 {
+  color: white; }
+
+header, footer {
+  background-color: #0aaed3; }
+
+.logo h2 {
+  color: white; }
+
+.menu-left a, .menu-right a, .contact a, .index-menu a, .happy-cow a {
+  color: #0c839e; }
+
+.menu-left a:hover, .menu-right a:hover, .map h3:hover, .contact a:hover, .index-menu a:hover, .happy-cow a:hover {
+  color: #51d4f2; }
+
+.hours h1, .index-menu h1, .contact h1, .brief-about h1, .upcoming-events h1, .happy-cow h1 {
+  text-shadow: 2px 2px 2px white, 5px 2px 3px #ffc000, 5px 2px 3px #ffc000; }
+
+/*! responsive-nav.js 1.0.34 by @viljamis */
+.responsive-nav {
+  float: right;
+  margin-top: 1.2em; }
+
+.responsive-nav a:hover {
+  color: white; }
+
+.nav-collapse ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block; }
+
+.nav-collapse li {
+  width: 100%;
+  display: block; }
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+  margin-top: 0.1em;
+  background-color: #0aaed3; }
+
+.nav-collapse.opened {
+  max-height: 300px;
+  position: relative; }
+
+.nav-toggle {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: #ffc000;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px; }
+
+/***global CSS, smallest size***/
+/***universal***/
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 1200px; }
+
+a {
+  text-decoration: none; }
+
+img {
+  width: 100%; }
+
+/***header***/
+.logo {
+  float: left; }
+  .logo h2 {
+    padding-top: 0.75em;
+    padding-bottom: 0.75em; }
+
+.desktop {
+  display: none; }
+
+/***main page***/
+.hero-main {
+  background-image: url(../IMG/bouldin-mural-home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 3em; }
+  .hero-main h1 {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 2px 2px 18px black, 2px 2px 18px black; }
+
+.map a {
+  text-align: center; }
+
+.contact a {
+  display: block; }
+
+.index-menu h1, .hours h1, .contact h1, .brief-about h1, .upcoming-events h1 {
+  margin-bottom: 0.25em; }
+
+.map, .hours, .index-menu, .strongman, .contact, .upcoming-events, .brief-about, .coffeebar, .happy-cow, .seating {
+  margin-bottom: 3em; }
+
+.strongman {
+  background-image: url(../IMG/bouldin-strongman.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 300px; }
+
+.coffeebar {
+  background-image: url(../IMG/bouldin-coffeebar.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  min-height: 300px; }
+
+.seating {
+  background-image: url(../IMG/bouldin-seating.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  min-height: 300px; }
+
+.main-content {
+  margin-bottom: 4em; }
+
+/***menu page***/
+.hero-menu {
+  background-image: url(../IMG/bouldin-mural-menu.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 3em; }
+  .hero-menu h1 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    font-size: 4em;
+    text-shadow: 2px 2px 18px black, 2px 2px 18px black; }
+
+.menu-nav {
+  overflow: hidden;
+  margin-bottom: 6em; }
+
+.menu-left, .menu-right {
+  float: left;
+  width: 48%;
+  text-align: center; }
+
+.menu-left {
+  margin-right: 4%; }
+
+.breakfast-header {
+  text-shadow: 2px 2px 2px white, 5px 2px 3px #ffc000, 5px 2px 3px #ffc000;
+  margin-bottom: 0.5em; }
+
+.breakfast-description {
+  margin-bottom: 3em; }
+
+.menu-description {
+  margin-bottom: 2em; }
+
+.menu-section {
+  margin-bottom: 0.5em; }
+
+.menu-item {
+  margin-bottom: 2em; }
+
+.last-menu-item {
+  margin-bottom: 4em; }
+
+.item-name, .item-price {
+  display: inline-block; }
+
+.allergies {
+  margin-bottom: 2em; }
+
+.item-price {
+  margin-left: 0.5em; }
+
+/***about page***/
+.hero-about {
+  background-image: url(../IMG/bouldin-mural-about.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 3em; }
+  .hero-about h1 {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 2px 2px 18px black, 2px 2px 18px black; }
+
+.about p {
+  margin-bottom: 1em;
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.about img {
+  margin-bottom: 2em;
+  margin-top: 2em;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 800px; }
+
+.about .last-item {
+  margin-bottom: 4em; }
+
+/***footer***/
+footer {
+  overflow: hidden; }
+
+footer ul {
+  width: 80%;
+  margin: 0 auto; }
+
+footer li {
+  float: left;
+  width: 20%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em; }
+
+@media screen and (min-width: 700px) {
+  /***header***/
+  .responsive-nav {
+    display: none; }
+
+  .desktop {
+    display: block;
+    float: right;
+    width: 50%; }
+    .desktop ul {
+      text-align: right; }
+      .desktop ul li {
+        display: inline-block;
+        margin-right: 7%;
+        padding-top: 1.25em; }
+
+  .logo {
+    float: left;
+    width: 50%; }
+
+  /***footer***/
+  footer li {
+    width: 10%; }
+
+  /***main page***/
+  .hero-main h1 {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-size: 3em; }
+
+  .map, .hours, .index-menu, .strongman, .contact, .upcoming-events, .brief-about, .coffeebar, .happy-cow, .seating {
+    height: 400px;
+    margin-bottom: 0;
+    float: left; }
+
+  .hours, .index-menu, .contact, .upcoming-events, .brief-about, .happy-cow {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em; }
+
+  .index-menu, .happy-cow {
+    background-color: #4cd7f7; }
+
+  .hours, .brief-about {
+    background-color: #10aacd; }
+
+  .contact, .upcoming-events, .map {
+    background-color: #ffd557; }
+
+  .map, .brief-about {
+    width: 60%; }
+
+  .hours, .upcoming-events {
+    width: 40%; }
+
+  .index-menu, .strongman, .contact, .coffeebar, .happy-cow, .seating {
+    width: 33.333%; }
+
+  .hours p, .index-menu p, .brief-about p, .happy-cow p {
+    color: white; }
+
+  .index-menu a:hover, .happy-cow a:hover, .contact a:hover, .map h3:hover {
+    color: white; }
+
+  .index-menu h1, .contact h1, .upcoming-events h1, .happy-cow h1 {
+    text-shadow: 3px 2px 2px white, 3px 2px 2px white; }
+
+  .hours h1, .brief-about h1 {
+    text-shadow: 3px 2px 2px white, -3px -2px 2px white; }
+
+  /***menu page***/
+  .menu-left a, .menu-right a {
+    font-weight: bold; }
+
+  .menu-item {
+    width: 47%;
+    float: left; }
+
+  .menu-item:nth-of-type(even) {
+    margin-right: 6%; }
+
+  .menu-item, .last-menu-item {
+    margin-bottom: 3em; }
+
+  .no-description {
+    margin-bottom: 1em; }
+
+  .allergies, .menu-section {
+    clear: both; }
+
+  /***about page***/
+  .hero-about h1 {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-size: 3em; } }
+@media screen and (min-width: 950px) {
+  /***main page***/
+  .hero-main h1 {
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    font-size: 3em; }
+
+  .map {
+    background-color: #ffd34d; }
+    .map img {
+      display: block;
+      margin: auto;
+      width: 75%; }
+
+  /***menu page***/
+  .hero-menu h1 {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em; }
+
+  .menu-nav {
+    width: 20%;
+    float: left;
+    margin-right: 10%;
+    position: absolute;
+    height: 500px; }
+    .menu-nav .menu-left, .menu-nav .menu-right {
+      display: block;
+      float: none;
+      text-align: left; }
+      .menu-nav .menu-left ul, .menu-nav .menu-right ul {
+        list-style-type: disc; }
+
+  .breakfast {
+    width: 90%;
+    max-width: 800px;
+    float: right; }
+
+  .menu-description, .allergies {
+    width: 90%; }
+
+  .menu-item {
+    width: 40%; }
+
+  .menu-item:nth-of-type(even) {
+    margin-right: 10%; }
+
+  .menu-item, .last-menu-item {
+    margin-bottom: 3.5em; }
+
+  /***about page***/
+  .hero-about h1 {
+    font-size: 3.5em; } }
+
+/*# sourceMappingURL=style.css.map */
