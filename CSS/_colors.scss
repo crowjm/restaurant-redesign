@@ -4,7 +4,11 @@ $brightblue: #0aaed3;
 $yellow: #ffc000;
 $white: white;
 
-h1, .item-description, {
+h1 {
+	color: $white;
+}
+
+.item-description, {
 	color: $teal;
 }
 
@@ -30,7 +34,7 @@ a:hover {
 
 .hero {
 	h1 {
-		color: white;
+		color: $white;
 	}
 }
 
@@ -52,6 +56,10 @@ header, footer {
 	color: lighten($teal, 30%);
 }
 
-.hours h1, .index-menu h1, .contact h1, .brief-about h1, .upcoming-events h1, .happy-cow h1 {
-	text-shadow: 2px 2px 2px white, 5px 2px 3px $yellow, 5px 2px 3px $yellow;
+.hours h2, .brief-about h2 {
+	color: $yellow;
+}
+
+.index-menu h2, .happy-cow h2 {
+	color: darken($teal, 10%);
 }

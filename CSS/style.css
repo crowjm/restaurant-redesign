@@ -93,7 +93,13 @@ span {
 .menu-left a, .menu-right a {
   font-weight: bold; }
 
-h1, .item-description {
+.breakfast-header {
+  font-size: 2.5rem; }
+
+h1 {
+  color: white; }
+
+.item-description {
   color: #0c839e; }
 
 p, .allergies {
@@ -126,8 +132,11 @@ header, footer {
 .menu-left a:hover, .menu-right a:hover, .map h3:hover, .contact a:hover, .index-menu a:hover, .happy-cow a:hover {
   color: #51d4f2; }
 
-.hours h1, .index-menu h1, .contact h1, .brief-about h1, .upcoming-events h1, .happy-cow h1 {
-  text-shadow: 2px 2px 2px white, 5px 2px 3px #ffc000, 5px 2px 3px #ffc000; }
+.hours h2, .brief-about h2 {
+  color: #ffc000; }
+
+.index-menu h2, .happy-cow h2 {
+  color: #085c6f; }
 
 /*! responsive-nav.js 1.0.34 by @viljamis */
 .responsive-nav {
@@ -452,9 +461,9 @@ footer li {
 @media screen and (min-width: 950px) {
   /***main page***/
   .hero-main h1 {
-    padding-top: 2.5em;
-    padding-bottom: 2.5em;
-    font-size: 3em; }
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    font-size: 4em; }
 
   .map {
     background-color: #ffd34d; }
