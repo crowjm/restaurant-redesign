@@ -31,7 +31,13 @@ footer li {
 
 
 /***main page***/
+.homepage-wrapper {
+	width: 100%;
+	max-width: 100%;
+}
+
 .hero-main {
+	margin-bottom: 0;
 	h1 {
 		padding-top: 2em;
 		padding-bottom: 2em;
@@ -45,14 +51,11 @@ footer li {
 	float: left;
 }
 
-.hours, .index-menu, .contact, .upcoming-events, .brief-about, .happy-cow, {
+.map, .hours, .index-menu, .contact, .upcoming-events, .brief-about, .happy-cow, {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	padding-top: 1em;
-	padding-bottom: 1em;
-	padding-left: 1em;
-	padding-right: 1em;
+	padding: 2em;
 }
 
 .index-menu, .happy-cow {
@@ -95,7 +98,25 @@ footer li {
 	text-shadow: 3px 2px 2px white, -3px -2px 2px white;
 }
 
+.menu-left a, .menu-right a, .contact a, .index-menu a, .happy-cow a {
+	color: $teal;
+}
 
+.menu-left a:hover, .menu-right a:hover, .map h3:hover, .contact a:hover, .index-menu a:hover, .happy-cow a:hover {
+	color: lighten($teal, 30%);
+}
+
+.hours h2, .brief-about h2 {
+	color: $yellow;
+}
+
+.index-menu h2, .happy-cow h2 {
+	color: darken($teal, 10%);
+}
+
+li {
+	color: white;
+}
 
 
 

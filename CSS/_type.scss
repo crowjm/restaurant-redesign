@@ -55,7 +55,7 @@ h3 {
 	@include h3;
 }
 
-p {
+p, li {
 	@include p;
 }
 
@@ -75,7 +75,7 @@ h1, h2, h3, {
 	line-height: 1.3;
 }
 
-p, a {
+p, a, li {
 	line-height: 1.8;
 }
 

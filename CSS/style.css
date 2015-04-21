@@ -60,7 +60,7 @@ h3 {
   font-weight: 600;
   font-size: 1.3em; }
 
-p {
+p, li {
   font-family: "sharik-sans", sans-serif;
   font-weight: 400;
   font-size: 1.1em; }
@@ -84,7 +84,7 @@ a {
 h1, h2, h3 {
   line-height: 1.3; }
 
-p, a {
+p, a, li {
   line-height: 1.8; }
 
 span {
@@ -102,7 +102,7 @@ h1 {
 .item-description {
   color: #0c839e; }
 
-p, .allergies {
+p, .allergies, li {
   color: #767b7c; }
 
 h2, h3 {
@@ -125,18 +125,6 @@ header, footer {
 
 .logo h2 {
   color: white; }
-
-.menu-left a, .menu-right a, .contact a, .index-menu a, .happy-cow a {
-  color: #0c839e; }
-
-.menu-left a:hover, .menu-right a:hover, .map h3:hover, .contact a:hover, .index-menu a:hover, .happy-cow a:hover {
-  color: #51d4f2; }
-
-.hours h2, .brief-about h2 {
-  color: #ffc000; }
-
-.index-menu h2, .happy-cow h2 {
-  color: #085c6f; }
 
 /*! responsive-nav.js 1.0.34 by @viljamis */
 .responsive-nav {
@@ -192,7 +180,7 @@ header, footer {
 
 /***global CSS, smallest size***/
 /***universal***/
-.wrapper {
+.wrapper, .homepage-wrapper {
   width: 90%;
   margin: 0 auto;
   overflow: hidden;
@@ -233,6 +221,9 @@ img {
 .contact a {
   display: block; }
 
+.menu-left a, .menu-right a, .contact a, .index-menu a, .happy-cow a {
+  color: #ffc000; }
+
 .index-menu h1, .hours h1, .contact h1, .brief-about h1, .upcoming-events h1 {
   margin-bottom: 0.25em; }
 
@@ -261,6 +252,10 @@ img {
 
 .main-content {
   margin-bottom: 4em; }
+
+.brief-about ul {
+  list-style-type: disc;
+  list-style-position: inside; }
 
 /***menu page***/
 .hero-menu {
@@ -384,24 +379,27 @@ footer li {
     width: 10%; }
 
   /***main page***/
-  .hero-main h1 {
-    padding-top: 2em;
-    padding-bottom: 2em;
-    font-size: 3em; }
+  .homepage-wrapper {
+    width: 100%;
+    max-width: 100%; }
+
+  .hero-main {
+    margin-bottom: 0; }
+    .hero-main h1 {
+      padding-top: 2em;
+      padding-bottom: 2em;
+      font-size: 3em; }
 
   .map, .hours, .index-menu, .strongman, .contact, .upcoming-events, .brief-about, .coffeebar, .happy-cow, .seating {
     height: 400px;
     margin-bottom: 0;
     float: left; }
 
-  .hours, .index-menu, .contact, .upcoming-events, .brief-about, .happy-cow {
+  .map, .hours, .index-menu, .contact, .upcoming-events, .brief-about, .happy-cow {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 1em;
-    padding-right: 1em; }
+    padding: 2em; }
 
   .index-menu, .happy-cow {
     background-color: #4cd7f7; }
@@ -432,6 +430,21 @@ footer li {
 
   .hours h1, .brief-about h1 {
     text-shadow: 3px 2px 2px white, -3px -2px 2px white; }
+
+  .menu-left a, .menu-right a, .contact a, .index-menu a, .happy-cow a {
+    color: #0c839e; }
+
+  .menu-left a:hover, .menu-right a:hover, .map h3:hover, .contact a:hover, .index-menu a:hover, .happy-cow a:hover {
+    color: #51d4f2; }
+
+  .hours h2, .brief-about h2 {
+    color: #ffc000; }
+
+  .index-menu h2, .happy-cow h2 {
+    color: #085c6f; }
+
+  li {
+    color: white; }
 
   /***menu page***/
   .menu-left a, .menu-right a {

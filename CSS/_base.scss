@@ -1,7 +1,7 @@
 /***global CSS, smallest size***/
 
 /***universal***/
-.wrapper {
+.wrapper, .homepage-wrapper {
 	width: 90%;
 	margin: 0 auto;
 	overflow: hidden;
@@ -53,6 +53,10 @@ img {
 	display: block;
 }
 
+.menu-left a, .menu-right a, .contact a, .index-menu a, .happy-cow a {
+	color: $yellow;
+}
+
 .index-menu h1, .hours h1, .contact h1, .brief-about h1, .upcoming-events h1 {
 	margin-bottom: 0.25em;
 }
@@ -86,6 +90,13 @@ img {
 
 .main-content {
 	margin-bottom: 4em;
+}
+
+.brief-about {
+	ul {
+		list-style-type: disc;
+		list-style-position: inside;
+	}
 }
 
 

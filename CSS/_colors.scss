@@ -12,7 +12,7 @@ h1 {
 	color: $teal;
 }
 
-p, .allergies {
+p, .allergies, li {
 	color: $grey;	
 }
 
@@ -46,20 +46,4 @@ header, footer {
 	h2 {
 		color: white;
 	}
-}
-
-.menu-left a, .menu-right a, .contact a, .index-menu a, .happy-cow a {
-	color: $teal;
-}
-
-.menu-left a:hover, .menu-right a:hover, .map h3:hover, .contact a:hover, .index-menu a:hover, .happy-cow a:hover {
-	color: lighten($teal, 30%);
-}
-
-.hours h2, .brief-about h2 {
-	color: $yellow;
-}
-
-.index-menu h2, .happy-cow h2 {
-	color: darken($teal, 10%);
 }
