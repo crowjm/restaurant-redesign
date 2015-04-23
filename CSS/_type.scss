@@ -1,74 +1,5 @@
-@mixin h1 {
+body {
 	font-family: "sharik-sans", sans-serif;
-	font-weight: 800;
-	font-size: 2em;
-}
-
-@mixin h2 {
-	font-family: "sharik-sans", sans-serif;
-	font-weight: 700;
-	font-size: 1.5em;
-}
-
-@mixin h3 {
-	font-family: "sharik-sans", sans-serif;
-	font-weight: 600;
-	font-size: 1.3em;
-}
-
-@mixin p {
-	font-family: "sharik-sans", sans-serif;
-	font-weight: 400;
-	font-size: 1.1em;
-}
-
-@mixin a {
-	font-family: "sharik-sans", sans-serif;
-	font-weight: 400;
-	font-size: 1em;
-}
-
-@mixin item-description {
-	font-family: "sharik-sans", sans-serif;
-	font-weight: 400;
-	font-style: italic;
-	font-size: 1.1em;
-}
-
-@mixin item-price {
-	font-family: "sharik-sans", sans-serif;
-	font-weight: 400;
-	font-size: 1.1em;
-}
-
-
-
-h1 {
-	@include h1;
-}
-
-h2 {
-	@include h2;
-}
-
-h3 {
-	@include h3;
-}
-
-p, li {
-	@include p;
-}
-
-a {
-	@include a;
-}
-
-.item-description {
-	@include item-description;
-}
-
-.item-price {
-	@include item-price;
 }
 
 h1, h2, h3, {
@@ -77,6 +8,42 @@ h1, h2, h3, {
 
 p, a, li {
 	line-height: 1.8;
+}
+
+h1 {
+	font-weight: 800;
+	font-size: 2em;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 1.5em;
+}
+
+h3 {
+	font-weight: 600;
+	font-size: 1.3em;
+}
+
+p {
+	font-weight: 400;
+	font-size: 1.1em;
+}
+
+a {
+	font-weight: 400;
+	font-size: 1em;
+}
+
+.item-description {
+	font-weight: 400;
+	font-style: italic;
+	font-size: 1.1em;
+}
+
+.item-price {
+	font-weight: 400;
+	font-size: 1.1em;
 }
 
 span {

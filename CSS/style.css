@@ -45,47 +45,43 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-h1 {
-  font-family: "sharik-sans", sans-serif;
-  font-weight: 800;
-  font-size: 2em; }
-
-h2 {
-  font-family: "sharik-sans", sans-serif;
-  font-weight: 700;
-  font-size: 1.5em; }
-
-h3 {
-  font-family: "sharik-sans", sans-serif;
-  font-weight: 600;
-  font-size: 1.3em; }
-
-p, li {
-  font-family: "sharik-sans", sans-serif;
-  font-weight: 400;
-  font-size: 1.1em; }
-
-a {
-  font-family: "sharik-sans", sans-serif;
-  font-weight: 400;
-  font-size: 1em; }
-
-.item-description {
-  font-family: "sharik-sans", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 1.1em; }
-
-.item-price {
-  font-family: "sharik-sans", sans-serif;
-  font-weight: 400;
-  font-size: 1.1em; }
+body {
+  font-family: "sharik-sans", sans-serif; }
 
 h1, h2, h3 {
   line-height: 1.3; }
 
 p, a, li {
   line-height: 1.8; }
+
+h1 {
+  font-weight: 800;
+  font-size: 2em; }
+
+h2 {
+  font-weight: 700;
+  font-size: 1.5em; }
+
+h3 {
+  font-weight: 600;
+  font-size: 1.3em; }
+
+p {
+  font-weight: 400;
+  font-size: 1.1em; }
+
+a {
+  font-weight: 400;
+  font-size: 1em; }
+
+.item-description {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.1em; }
+
+.item-price {
+  font-weight: 400;
+  font-size: 1.1em; }
 
 span {
   font-weight: bold; }
@@ -257,6 +253,9 @@ img {
   list-style-type: disc;
   list-style-position: inside; }
 
+.telephone {
+  font-size: 1.2rem; }
+
 /***menu page***/
 .hero-menu {
   background-image: url(../IMG/bouldin-mural-menu.jpg);
@@ -305,7 +304,8 @@ img {
   display: inline-block; }
 
 .allergies {
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+  text-indent: -8px; }
 
 .item-price {
   margin-left: 0.5em; }
